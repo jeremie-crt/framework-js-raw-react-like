@@ -24,7 +24,7 @@ export const styles = {
         backgroundColor: "rgba(255, 255, 255, 0.5)",
         display: 'block',
         margin: "15px auto",
-        height: "80px"
+        height: "80px",
     },
 
     selectStyle: {
