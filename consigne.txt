@@ -1,0 +1,28 @@
+Il va falloir créer un formulaire comme sur la maquette
+
+de ce type HTML :
+
+<div>
+	<form>
+		<input type="text" placeholder="Nom" id="LastName" style="border-top: none; border-right: none; border-bottom: 2px solid rgb(39, 125, 194); border-left: none; border-image: initial; padding: 5px 10px; background-color: rgba(255, 255, 255, 0.5); display: block; margin: 15px auto;">
+		
+		<input type="text" placeholder="Prénom" id="firstName" style="border-top: none; border-right: none; border-bottom: 2px solid rgb(39, 125, 194); border-left: none; border-image: initial; padding: 5px 10px; background-color: rgba(255, 255, 255, 0.5); display: block; margin: 15px auto;">
+		
+		<select id="select" style="border: 2px solid rgb(39, 125, 194); border-radius: 8px; padding: 5px 10px; background-color: rgba(255, 255, 255, 0.5); display: block; margin: 15px auto; height: 30px;">
+			<option value="25">25 ans</option>
+			<option value="26">26 ans</option>
+			<option value="27">27 ans</option>
+			<option value="28">28 ans</option>
+		</select>
+
+		<textarea id="description" style="border: 2px solid rgb(39, 125, 194); border-radius: 8px; padding: 5px 0px; background-color: rgba(255, 255, 255, 0.5); display: block; margin: 15px auto; height: 80px;">
+		</textarea>
+
+		<button id="firstName" style="background-color: rgb(39, 125, 194); color: white; border: none; border-radius: 8px; padding: 10px 15px;">Cliquez</button>
+	</form>
+</div>
+
+Dans un component App qui sera à la fin injecté dans la balise #result
+ce component va rassembler vos component : Div, Form, Input, Select, Textarea, Button
+
+Il faudra en bonus créer une alert au click sur le bouton
