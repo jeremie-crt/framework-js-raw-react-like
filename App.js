@@ -35,7 +35,7 @@ export class App extends Component {
         //Give Direct HTML ELEMENTS
         let input = react.createElementHtml(Input, {id: 'firstname', type: 'text', name: 'firstname', placeholder:'Firstname', style: styles.inputStyle})
 
-        let button = react.createElementHtml(Button, {id: 'button', type: 'submit', name: 'submit', textContent: 'SEND', style: styles.buttonStyle})
+        let button = react.createElementHtml(Button, {id: 'button', type: 'submit', name: 'submit', textContent: 'SEND', style: styles.buttonStyle, onclick: () => {this.onClickButton()}})
 
         let textarea = react.createElementHtml(Textarea, {id: 'textarea', name: 'description', placeholder: 'Type a description in this area...', cols: '50', rows: '50', style: styles.textareaStyle})
 

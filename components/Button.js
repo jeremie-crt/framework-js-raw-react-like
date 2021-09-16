@@ -12,6 +12,8 @@ export class Button extends Component {
 		for(const key in this.props) {
 			this.elementHtml[key] = this.props[key]
 		}
+
+		this.elementHtml.addEventListener('click', this.props.onclick)
 	}
 
 	render() {
